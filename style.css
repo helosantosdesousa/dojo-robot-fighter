@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --bar-color: #FF009B;
+    --timer-color: #89CFF3;
+    --border-color: #FF8FA0;
+    --bg-color: #e884ae;
+    --border-timer-color: #8FA0FF;
+    --color-white: #fff;
+    --color-black: #000;
+    --result-text-color: rgb(189, 30, 96);
+    --secondary-font: 'Playfair Display SC', serif;
+    --main-font: 'Pixelify Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+  }
+
+
+body{
+    font-family: var(--main-font);
+}
+.audio-container {
+    border: none;
+    position: absolute;
+    top: 0px;
+    margin: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  
+  
+button {
+    display: none; 
+    
+}
+.container {
+   margin-top: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.container-bars {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bar-color);
+    padding: 2px;
+    position: relative;
+    border: var(--border-color) solid 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: var(--color-white);
+}
+
+.container-bar {
+    height: 100%;
+    width: 0;
+    font-family: var(--secondary-font);
+}
+
+.timer{
+    background-color: var(--timer-color);
+    border: var(--bar-color) solid 5px;
+    font-family: var(--secondary-font);
+    font-size: 35px;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.battle-result{
+    
+    position: absolute;
+    color: var(--result-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    font-size: 70px;
+}
+
+@keyframes blinker {
+    60% {
+      opacity: 0;
+    }
+  }
+
+
+  .play-again {
+    position: absolute;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 55%;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    animation: blinker 0.8s step-start infinite;    
+}
+#collision-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+

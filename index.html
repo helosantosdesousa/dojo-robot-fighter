@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Playfair+Display+SC:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/dojo.ico" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="audio-container">
+        <audio id="audio" controls>
+            <source src="./audio/SnapInsta.io - No Copyright Music _ Chinese Music _ Ancient China (128 kbps).mp3" type="audio/mpeg">
+        </audio>
+        <br><br>
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+    </div>
+    <div class="container">
+        <div class="container-bars">
+            <div class="bar" id="bar-player">
+            </div>
+            <div id="timer" class="timer"> 5 </div>
+            <div class="bar" id="bar-enemy">
+                <div class="container-bars">
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
+        <div class="play-again" id="play-again"></div>
+        <div class="battle-result" id="battle-result">Empate</div>
+
+        <img id="collision-image" src="./img/explosion .png" style="display: none;" />
+        
+        <canvas></canvas>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="./js/resetGame.js"></script>
+</body>
+
+</html>

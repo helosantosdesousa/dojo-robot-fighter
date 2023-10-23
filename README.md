@@ -17,5 +17,5 @@ https://www.youtube.com/watch?v=vyqbNFMDRGQ&ab_channel=ChrisCourses
 https://www.youtube.com/watch?v=3AW_7ifKDA8&ab_channel=YoutubeLibrary-NOCOPYRIGHTSOUNDS
 
 ## Images:
-- Bing AI creator
+- Bing IA creator
 - https://yariplus.itch.io/cute-robot
